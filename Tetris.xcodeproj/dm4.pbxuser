@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	1D3623240D0F684500981E51 /* TetrisAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {946, 471}}";
+			sepNavSelRange = "{110, 0}";
+			sepNavVisRange = "{0, 420}";
+		};
+	};
+	1D3623250D0F684500981E51 /* TetrisAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {2802, 1974}}";
+			sepNavSelRange = "{554, 0}";
+			sepNavVisRange = "{0, 399}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* Tetris */ = {
+		activeExec = 0;
+		executables = (
+			FA96763112F18B67005BA273 /* Tetris */,
+		);
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = FA96763112F18B67005BA273 /* Tetris */;
+		activeSDKPreference = iphoneos4.2;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* Tetris */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* Tetris */,
+		);
+		codeSenseManager = FA96763612F18B85005BA273 /* Code sense */;
+		executables = (
+			FA96763112F18B67005BA273 /* Tetris */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					824,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					728,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 318176177;
+			PBXWorkspaceStateSaveDate = 318176177;
+		};
+		perUserProjectItems = {
+			FA66467C12F6FB3C00FDB750 = FA66467C12F6FB3C00FDB750 /* PBXTextBookmark */;
+			FA66467D12F6FB3C00FDB750 = FA66467D12F6FB3C00FDB750 /* PBXTextBookmark */;
+			FA66467E12F6FB3C00FDB750 = FA66467E12F6FB3C00FDB750 /* PBXTextBookmark */;
+			FA66467F12F6FB3C00FDB750 = FA66467F12F6FB3C00FDB750 /* PBXTextBookmark */;
+			FA66468012F6FB3C00FDB750 = FA66468012F6FB3C00FDB750 /* PBXTextBookmark */;
+			FA66468112F6FB3C00FDB750 = FA66468112F6FB3C00FDB750 /* PBXTextBookmark */;
+			FA66468212F6FB3C00FDB750 = FA66468212F6FB3C00FDB750 /* PBXTextBookmark */;
+			FA66468312F6FB3C00FDB750 = FA66468312F6FB3C00FDB750 /* PBXTextBookmark */;
+			FA99C86B12F1AA2A008F2655 = FA99C86B12F1AA2A008F2655 /* PBXTextBookmark */;
+			FA99C86C12F1AA2A008F2655 = FA99C86C12F1AA2A008F2655 /* PBXTextBookmark */;
+			FAA1840912F6FBB8000EB7E5 /* PBXTextBookmark */ = FAA1840912F6FBB8000EB7E5 /* PBXTextBookmark */;
+			FAA1841812F6FD44000EB7E5 /* PBXTextBookmark */ = FAA1841812F6FD44000EB7E5 /* PBXTextBookmark */;
+			FAAEE69512F3F63C0035EC6B = FAAEE69512F3F63C0035EC6B /* PBXTextBookmark */;
+			FAAEE79212F4399B0035EC6B = FAAEE79212F4399B0035EC6B /* PBXTextBookmark */;
+			FAE0153D12F45C89007EB05C = FAE0153D12F45C89007EB05C /* PBXTextBookmark */;
+			FAE0155912F483F0007EB05C = FAE0155912F483F0007EB05C /* PBXTextBookmark */;
+			FAE0155A12F483F0007EB05C = FAE0155A12F483F0007EB05C /* PlistBookmark */;
+			FAE0156612F485E0007EB05C = FAE0156612F485E0007EB05C /* PBXTextBookmark */;
+			FAE0157212F48643007EB05C = FAE0157212F48643007EB05C /* PlistBookmark */;
+			FAE0158312F488CD007EB05C = FAE0158312F488CD007EB05C /* PBXBookmark */;
+			FAE0158412F488CD007EB05C = FAE0158412F488CD007EB05C /* PBXBookmark */;
+			FAE0158512F488CD007EB05C = FAE0158512F488CD007EB05C /* PBXBookmark */;
+			FAE0158812F488CD007EB05C = FAE0158812F488CD007EB05C /* PBXTextBookmark */;
+			FAE015A512F4898C007EB05C = FAE015A512F4898C007EB05C /* PBXTextBookmark */;
+			FAE015A612F4898C007EB05C = FAE015A612F4898C007EB05C /* PBXTextBookmark */;
+			FAE015A812F4898C007EB05C = FAE015A812F4898C007EB05C /* PBXTextBookmark */;
+			FAE015A912F4898C007EB05C = FAE015A912F4898C007EB05C /* PBXTextBookmark */;
+			FAE015AA12F4898C007EB05C = FAE015AA12F4898C007EB05C /* PBXTextBookmark */;
+			FAE015CF12F48C10007EB05C = FAE015CF12F48C10007EB05C /* PBXTextBookmark */;
+			FAE015E812F48EEE007EB05C = FAE015E812F48EEE007EB05C /* PBXTextBookmark */;
+			FAE015E912F48EEE007EB05C = FAE015E912F48EEE007EB05C /* PBXTextBookmark */;
+			FAE015EA12F48EEE007EB05C = FAE015EA12F48EEE007EB05C /* PBXTextBookmark */;
+		};
+		sourceControlManager = FA96763512F18B85005BA273 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	29B97316FDCFA39411CA2CEA /* main.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {946, 454}}";
+			sepNavSelRange = "{97, 0}";
+			sepNavVisRange = "{0, 353}";
+		};
+	};
+	32CA4F630368D1EE00C91783 /* Tetris_Prefix.pch */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {946, 454}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 181}";
+		};
+	};
+	FA66467C12F6FB3C00FDB750 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FAE0154212F45D62007EB05C /* FieldView.h */;
+		name = "FieldView.h: 18";
+		rLen = 0;
+		rLoc = 282;
+		rType = 0;
+		vrLen = 288;
+		vrLoc = 0;
+	};
+	FA66467D12F6FB3C00FDB750 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FAE0158012F4887B007EB05C /* FieldModel.h */;
+		name = "FieldModel.h: 27";
+		rLen = 0;
+		rLoc = 450;
+		rType = 0;
+		vrLen = 557;
+		vrLoc = 3;
+	};
+	FA66467E12F6FB3C00FDB750 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FAE0158112F4887B007EB05C /* FieldModel.m */;
+		name = "FieldModel.m: 383";
+		rLen = 0;
+		rLoc = 7479;
+		rType = 0;
+		vrLen = 821;
+		vrLoc = 6846;
+	};
+	FA66467F12F6FB3C00FDB750 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FA99C83A12F1A148008F2655 /* GameViewController.m */;
+		name = "GameViewController.m: 86";
+		rLen = 4;
+		rLoc = 2820;
+		rType = 0;
+		vrLen = 1353;
+		vrLoc = 684;
+	};
+	FA66468012F6FB3C00FDB750 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FA99C83912F1A148008F2655 /* GameViewController.h */;
+		name = "GameViewController.h: 27";
+		rLen = 0;
+		rLoc = 593;
+		rType = 0;
+		vrLen = 658;
+		vrLoc = 162;
+	};
+	FA66468112F6FB3C00FDB750 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FAAEE74612F42A100035EC6B /* ArrowButton.h */;
+		name = "ArrowButton.h: 4";
+		rLen = 0;
+		rLoc = 34;
+		rType = 0;
+		vrLen = 213;
+		vrLoc = 0;
+	};
+	FA66468212F6FB3C00FDB750 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FAAEE74712F42A100035EC6B /* ArrowButton.m */;
+		name = "ArrowButton.m: 10";
+		rLen = 0;
+		rLoc = 177;
+		rType = 0;
+		vrLen = 752;
+		vrLoc = 0;
+	};
+	FA66468312F6FB3C00FDB750 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FAAEE74712F42A100035EC6B /* ArrowButton.m */;
+		name = "ArrowButton.m: 19";
+		rLen = 0;
+		rLoc = 514;
+		rType = 0;
+		vrLen = 785;
+		vrLoc = 68;
+	};
+	FA96763112F18B67005BA273 /* Tetris */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Tetris;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	FA96763512F18B85005BA273 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	FA96763612F18B85005BA273 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	FA99C83912F1A148008F2655 /* GameViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1002, 819}}";
+			sepNavSelRange = "{593, 0}";
+			sepNavVisRange = "{162, 658}";
+		};
+	};
+	FA99C83A12F1A148008F2655 /* GameViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1382, 2562}}";
+			sepNavSelRange = "{2739, 0}";
+			sepNavVisRange = "{2302, 694}";
+			sepNavWindowFrame = "{{48, 5}, {1033, 773}}";
+		};
+	};
+	FA99C86B12F1AA2A008F2655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 32CA4F630368D1EE00C91783 /* Tetris_Prefix.pch */;
+		name = "Tetris_Prefix.pch: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 181;
+		vrLoc = 0;
+	};
+	FA99C86C12F1AA2A008F2655 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 29B97316FDCFA39411CA2CEA /* main.m */;
+		name = "main.m: 6";
+		rLen = 0;
+		rLoc = 97;
+		rType = 0;
+		vrLen = 353;
+		vrLoc = 0;
+	};
+	FAA1840912F6FBB8000EB7E5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FAAEE74712F42A100035EC6B /* ArrowButton.m */;
+		name = "ArrowButton.m: 17";
+		rLen = 0;
+		rLoc = 401;
+		rType = 0;
+		vrLen = 818;
+		vrLoc = 35;
+	};
+	FAA1841812F6FD44000EB7E5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FAAEE74712F42A100035EC6B /* ArrowButton.m */;
+		name = "ArrowButton.m: 34";
+		rLen = 0;
+		rLoc = 976;
+		rType = 0;
+		vrLen = 966;
+		vrLoc = 35;
+	};
+	FAAEE54212F2AF620035EC6B /* OptionViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {946, 504}}";
+			sepNavSelRange = "{438, 28}";
+			sepNavVisRange = "{0, 467}";
+			sepNavWindowFrame = "{{15, 0}, {1033, 773}}";
+		};
+	};
+	FAAEE54312F2AF620035EC6B /* OptionViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1382, 1407}}";
+			sepNavSelRange = "{959, 0}";
+			sepNavVisRange = "{141, 772}";
+			sepNavWindowFrame = "{{15, 0}, {1033, 773}}";
+		};
+	};
+	FAAEE65012F3E8F60035EC6B /* DefaultSettings.plist */ = {
+		uiCtxt = {
+			sepNavWindowFrame = "{{15, 0}, {1033, 773}}";
+		};
+	};
+	FAAEE69512F3F63C0035EC6B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* TetrisAppDelegate.h */;
+		name = "TetrisAppDelegate.h: 6";
+		rLen = 0;
+		rLoc = 110;
+		rType = 0;
+		vrLen = 420;
+		vrLoc = 0;
+	};
+	FAAEE6D512F405F40035EC6B /* GameControlViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {946, 567}}";
+			sepNavSelRange = "{101, 0}";
+			sepNavVisRange = "{0, 526}";
+			sepNavWindowFrame = "{{72, 5}, {1033, 773}}";
+		};
+	};
+	FAAEE6D612F405F40035EC6B /* GameControlViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1052, 3150}}";
+			sepNavSelRange = "{5495, 0}";
+			sepNavVisRange = "{5264, 324}";
+			sepNavWindowFrame = "{{56, 5}, {1033, 773}}";
+		};
+	};
+	FAAEE74612F42A100035EC6B /* ArrowButton.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1002, 611}}";
+			sepNavSelRange = "{34, 0}";
+			sepNavVisRange = "{0, 213}";
+		};
+	};
+	FAAEE74712F42A100035EC6B /* ArrowButton.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1002, 819}}";
+			sepNavSelRange = "{976, 0}";
+			sepNavVisRange = "{35, 964}";
+		};
+	};
+	FAAEE78E12F439720035EC6B /* counter_clockwise.png */ = {
+		uiCtxt = {
+			sepNavWindowFrame = "{{15, 0}, {1033, 773}}";
+		};
+	};
+	FAAEE79212F4399B0035EC6B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FAAEE79312F4399B0035EC6B /* ArrowButton.m */;
+		name = "ArrowButton.m: 42";
+		rLen = 424;
+		rLoc = 740;
+		rType = 0;
+		vrLen = 766;
+		vrLoc = 619;
+	};
+	FAAEE79312F4399B0035EC6B /* ArrowButton.m */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ArrowButton.m;
+		path = "/Users/dm4/Desktop/Xcode/Tetris-old/Classes/ArrowButton.m";
+		sourceTree = "<absolute>";
+	};
+	FAAEE7F712F44EA20035EC6B /* Constants.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {946, 459}}";
+			sepNavSelRange = "{418, 0}";
+			sepNavVisRange = "{0, 418}";
+		};
+	};
+	FADF512512F199DA00692658 /* MenuViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {946, 459}}";
+			sepNavSelRange = "{162, 0}";
+			sepNavVisRange = "{0, 347}";
+			sepNavWindowFrame = "{{15, 0}, {1033, 773}}";
+		};
+	};
+	FADF512612F199DA00692658 /* MenuViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1382, 1134}}";
+			sepNavSelRange = "{1234, 0}";
+			sepNavVisRange = "{833, 407}";
+			sepNavWindowFrame = "{{15, 0}, {1033, 773}}";
+		};
+	};
+	FAE0153D12F45C89007EB05C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FAE0153E12F45C89007EB05C /* GameViewController.mi */;
+		name = "GameViewController.mi: 31";
+		rLen = 0;
+		rLoc = 1546;
+		rType = 0;
+		vrLen = 207;
+		vrLoc = 2407;
+	};
+	FAE0153E12F45C89007EB05C /* GameViewController.mi */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.objc.preprocessed;
+		name = GameViewController.mi;
+		path = "/Users/dm4/Desktop/Tetris/build/Tetris.build/Debug-iphoneos/Tetris.build/Objects-normal/armv6/GameViewController.mi";
+		sourceTree = "<absolute>";
+	};
+	FAE0154212F45D62007EB05C /* FieldView.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {946, 669}}";
+			sepNavSelRange = "{282, 0}";
+			sepNavVisRange = "{0, 288}";
+			sepNavWindowFrame = "{{15, 0}, {1033, 773}}";
+		};
+	};
+	FAE0154312F45D62007EB05C /* FieldView.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {946, 798}}";
+			sepNavSelRange = "{188, 0}";
+			sepNavVisRange = "{19, 709}";
+		};
+	};
+	FAE0155912F483F0007EB05C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FADF512512F199DA00692658 /* MenuViewController.h */;
+		name = "MenuViewController.h: 10";
+		rLen = 0;
+		rLoc = 162;
+		rType = 0;
+		vrLen = 347;
+		vrLoc = 0;
+	};
+	FAE0155A12F483F0007EB05C /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Tetris-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/dm4/Desktop/Tetris/Tetris-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	FAE0156612F485E0007EB05C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FAAEE6D612F405F40035EC6B /* GameControlViewController.m */;
+		name = "GameControlViewController.m: 43";
+		rLen = 0;
+		rLoc = 971;
+		rType = 0;
+		vrLen = 1011;
+		vrLoc = 849;
+	};
+	FAE0157212F48643007EB05C /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = FAAEE65012F3E8F60035EC6B /* DefaultSettings.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/dm4/Desktop/Tetris/Resources/DefaultSettings.plist;
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	FAE0158012F4887B007EB05C /* FieldModel.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {946, 1512}}";
+			sepNavSelRange = "{450, 0}";
+			sepNavVisRange = "{3, 557}";
+			sepNavWindowFrame = "{{15, 0}, {1033, 773}}";
+		};
+	};
+	FAE0158112F4887B007EB05C /* FieldModel.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1112, 8736}}";
+			sepNavSelRange = "{6864, 0}";
+			sepNavVisRange = "{6436, 909}";
+			sepNavWindowFrame = "{{162, 5}, {1033, 773}}";
+		};
+	};
+	FAE0158312F488CD007EB05C /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = FAAEE78D12F439720035EC6B /* clockwise.png */;
+	};
+	FAE0158412F488CD007EB05C /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = FAE0157B12F4866B007EB05C /* counter_clockwise@2x.png */;
+	};
+	FAE0158512F488CD007EB05C /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = FAE0157A12F4866B007EB05C /* clockwise@2x.png */;
+	};
+	FAE0158812F488CD007EB05C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FAAEE7F712F44EA20035EC6B /* Constants.h */;
+		name = "Constants.h: 17";
+		rLen = 0;
+		rLoc = 418;
+		rType = 0;
+		vrLen = 418;
+		vrLoc = 0;
+	};
+	FAE015A512F4898C007EB05C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FAAEE54312F2AF620035EC6B /* OptionViewController.m */;
+		name = "OptionViewController.m: 33";
+		rLen = 0;
+		rLoc = 959;
+		rType = 0;
+		vrLen = 772;
+		vrLoc = 141;
+	};
+	FAE015A612F4898C007EB05C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FADF512612F199DA00692658 /* MenuViewController.m */;
+		name = "MenuViewController.m: 52";
+		rLen = 0;
+		rLoc = 1234;
+		rType = 0;
+		vrLen = 407;
+		vrLoc = 833;
+	};
+	FAE015A812F4898C007EB05C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* TetrisAppDelegate.m */;
+		name = "TetrisAppDelegate.m: 23";
+		rLen = 0;
+		rLoc = 554;
+		rType = 0;
+		vrLen = 399;
+		vrLoc = 0;
+	};
+	FAE015A912F4898C007EB05C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FAAEE54212F2AF620035EC6B /* OptionViewController.h */;
+		name = "OptionViewController.h: 21";
+		rLen = 28;
+		rLoc = 438;
+		rType = 0;
+		vrLen = 467;
+		vrLoc = 0;
+	};
+	FAE015AA12F4898C007EB05C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FAAEE6D512F405F40035EC6B /* GameControlViewController.h */;
+		name = "GameControlViewController.h: 6";
+		rLen = 0;
+		rLoc = 101;
+		rType = 0;
+		vrLen = 526;
+		vrLoc = 0;
+	};
+	FAE015B012F48B3F007EB05C /* Block.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {946, 861}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{121, 514}";
+		};
+	};
+	FAE015B112F48B3F007EB05C /* Block.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {946, 2772}}";
+			sepNavSelRange = "{3186, 0}";
+			sepNavVisRange = "{2884, 432}";
+		};
+	};
+	FAE015B212F48B3F007EB05C /* BlockDrawer.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {946, 644}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 425}";
+		};
+	};
+	FAE015CF12F48C10007EB05C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FAE0154312F45D62007EB05C /* FieldView.m */;
+		name = "FieldView.m: 11";
+		rLen = 0;
+		rLoc = 188;
+		rType = 0;
+		vrLen = 709;
+		vrLoc = 19;
+	};
+	FAE015E812F48EEE007EB05C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FAE015B112F48B3F007EB05C /* Block.m */;
+		name = "Block.m: 121";
+		rLen = 0;
+		rLoc = 3186;
+		rType = 0;
+		vrLen = 432;
+		vrLoc = 2884;
+	};
+	FAE015E912F48EEE007EB05C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FAE015B012F48B3F007EB05C /* Block.h */;
+		name = "Block.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 514;
+		vrLoc = 121;
+	};
+	FAE015EA12F48EEE007EB05C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FAE015B212F48B3F007EB05C /* BlockDrawer.h */;
+		name = "BlockDrawer.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 425;
+		vrLoc = 0;
+	};
+}

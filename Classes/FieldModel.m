@@ -9,11 +9,19 @@
 #import "FieldModel.h"
 #import "FieldView.h"
 #import	"Block.h"
+#import "NextView.h"
+
+@interface FieldModel (Private)
+- (void)upPrivate;
+- (BOOL)downPrivate;
+- (BOOL)leftPrivate;
+- (BOOL)rightPrivate;
+@end
 
 @implementation FieldModel
 
 @synthesize fieldView;
-//@synthesize nextView;
+@synthesize nextView;
 @synthesize timer;
 @synthesize isDead;
 
@@ -38,9 +46,8 @@
 }
 
 - (void)timerEvent {
-//	NSLog(@"timer event");
 	if (!isPause) {
-		if (![self drop]) {
+		if (![self downPrivate]) {
 			[self solid];
 			if (![self generate]) {
 				[self gameOver];
@@ -54,139 +61,65 @@
 	isPause = !isPause;
 }
 
-- (void)upClick {
+#pragma mark -
+#pragma mark Interface of Controller
+
+- (void)up {
+    if (!isPause) {
+        [self upPrivate];
+    }
+}
+
+- (void)down {
 	if (!isPause) {
-		[self dropTillEnd];
+ 		[self downPrivate];
 	}
 }
 
-- (void)downClick {
+- (void)left {
 	if (!isPause) {
-		[self drop];
+		[self leftPrivate];
 	}
 }
 
-- (void)leftClick {
+- (void)right {
 	if (!isPause) {
-		[self left];
+		[self rightPrivate];
 	}
 }
 
-- (void)rightClick {
-	if (!isPause) {
-		[self right];
-	}
-}
-
-- (void)rotate1Click {
+- (void)clockwise {
 	if (!isPause) {
 		[self rotateClockwise:YES];
 	}
 }
 
-- (void)rotate2Click {
+- (void)counter_clockwise {
 	if (!isPause) {
 		[self rotateClockwise:NO];
 	}
 }
 
-- (void)upTimer {}
-
-- (void)downTimer {
+- (void)downLongPress {
 	if (!isPause) {
-		[self drop];
+		[self down];
 	}
 }
 
-- (void)leftTimer {
+- (void)leftLongPress {
 	if (!isPause) {
 		[self leftTillEnd];
 	}
 }
-- (void)rightTimer {
+
+- (void)rightLongPress {
 	if (!isPause) {
 		[self rightTillEnd];
 	}
 }
-- (void)rotate1Timer {}
-- (void)rotate2Timer {}
-
-- (BOOL)drop {
-	State *center = now.center;
-	NSMutableArray *blockStates = now.states;
-	for (State *state in blockStates) {
-		// reach bottom
-		if (center.y + state.y == 0) {
-			return NO;
-		}
-		// reach solided piece
-		if (field[center.x+state.x][center.y+state.y-1] == 1) {
-			return NO;
-		}
-	}
-	for (State *state in blockStates) {
-		field[center.x+state.x][center.y+state.y] = 0;
-	}
-	for (State *state in blockStates) {
-		field[center.x+state.x][center.y+state.y-1] = 10 + now.type;
-	}
-	[now drop];
-	[self updateView];
-	return YES;
-}
-
-- (BOOL)left {
-	State *center = now.center;
-	NSArray *blockStates = now.states;
-	for (State *state in blockStates) {
-		// reach left bound
-		if (center.x + state.x == 0) {
-			return NO;
-		}
-		// reach solided piece
-		if (field[center.x+state.x-1][center.y+state.y] == 1) {
-			return NO;
-		}
-	}
-	for (State *state in blockStates) {
-		field[center.x+state.x][center.y+state.y] = 0;
-	}
-	for (State *state in blockStates) {
-		field[center.x+state.x-1][center.y+state.y] = 10 + now.type;
-	}
-	[now left];
-	[self updateView];
-	return YES;
-}
-
-- (BOOL)right {
-	State *center = now.center;
-	NSMutableArray *blockStates = now.states;
-	for (State *state in blockStates) {
-		// reach left bound
-		if (center.x + state.x == 9) {
-			return NO;
-		}
-		// reach solided piece
-		if (field[center.x+state.x+1][center.y+state.y] == 1) {
-			return NO;
-		}
-	}
-	// erease older piece
-	for (State *state in blockStates) {
-		field[center.x+state.x][center.y+state.y] = 0;
-	}
-	// draw new piece
-	for (State *state in blockStates) {
-		field[center.x+state.x+1][center.y+state.y] = 10 + now.type;
-	}
-	[now right];
-	[self updateView];
-	return YES;
-}
 
 - (void)dropTillEnd {
-	while ([self drop]) {
+	while ([self downPrivate]) {
 	}
 	[self solid];
 	if (![self generate]) {
@@ -196,11 +129,11 @@
 }
 
 - (void)leftTillEnd {
-	while([self left]);
+	while([self leftPrivate]);
 }
 
 - (void)rightTillEnd {
-	while([self right]);
+	while([self rightPrivate]);
 }
 
 - (BOOL)generate {
@@ -209,7 +142,8 @@
 	NSMutableArray *blockStates = now.states;
 	for (State *state in blockStates) {
 		if ([self getX:state.x+4 Y:state.y+18]) {
-			isDead = YES;
+			self.isDead = YES;
+            return !isDead;
 		}
 	}
 	for (State *state in blockStates) {
@@ -384,23 +318,108 @@
 - (void)gameOver {
     [timer invalidate];
 	[self pause];
-	[fieldView gameOver];
+	//[fieldView gameOver];
 }
 
 - (void)updateView {
 	[self updateGhost];
 	[fieldView setNeedsDisplay];
-//	[nextView setNeedsDisplay];
+	[nextView setNeedsDisplay];
 }
 
 - (void)dealloc {
 	[now release];
 	[next release];
 	[ghost release];
-//	[nextView release];
+	[nextView release];
 	[fieldView release];
 	[timer release];
 	[super dealloc];
+}
+
+@end
+
+
+@implementation FieldModel (Private)
+
+- (void)upPrivate {
+	if (!isPause) {
+		[self dropTillEnd];
+	}
+}
+
+- (BOOL)downPrivate {
+	State *center = now.center;
+	NSMutableArray *blockStates = now.states;
+	for (State *state in blockStates) {
+		// reach bottom
+		if (center.y + state.y == 0) {
+			return NO;
+		}
+		// reach solided piece
+		if (field[center.x+state.x][center.y+state.y-1] == 1) {
+			return NO;
+		}
+	}
+	for (State *state in blockStates) {
+		field[center.x+state.x][center.y+state.y] = 0;
+	}
+	for (State *state in blockStates) {
+		field[center.x+state.x][center.y+state.y-1] = 10 + now.type;
+	}
+	[now drop];
+	[self updateView];
+	return YES;
+}
+
+- (BOOL)leftPrivate {
+	State *center = now.center;
+	NSArray *blockStates = now.states;
+	for (State *state in blockStates) {
+		// reach left bound
+		if (center.x + state.x == 0) {
+			return NO;
+		}
+		// reach solided piece
+		if (field[center.x+state.x-1][center.y+state.y] == 1) {
+			return NO;
+		}
+	}
+	for (State *state in blockStates) {
+		field[center.x+state.x][center.y+state.y] = 0;
+	}
+	for (State *state in blockStates) {
+		field[center.x+state.x-1][center.y+state.y] = 10 + now.type;
+	}
+	[now left];
+	[self updateView];
+	return YES;
+}
+
+- (BOOL)rightPrivate {
+	State *center = now.center;
+	NSMutableArray *blockStates = now.states;
+	for (State *state in blockStates) {
+		// reach left bound
+		if (center.x + state.x == 9) {
+			return NO;
+		}
+		// reach solided piece
+		if (field[center.x+state.x+1][center.y+state.y] == 1) {
+			return NO;
+		}
+	}
+	// erease older piece
+	for (State *state in blockStates) {
+		field[center.x+state.x][center.y+state.y] = 0;
+	}
+	// draw new piece
+	for (State *state in blockStates) {
+		field[center.x+state.x+1][center.y+state.y] = 10 + now.type;
+	}
+	[now right];
+	[self updateView];
+	return YES;
 }
 
 @end

@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>ghost</key>
-	<false/>
+	<true/>
 	<key>repeat</key>
 	<real>0.2</real>
 	<key>up_x</key>
@@ -23,13 +23,13 @@
 	<key>right_y</key>
 	<integer>151</integer>
 	<key>clockwise_x</key>
-	<integer>391</integer>
+	<integer>409</integer>
 	<key>clockwise_y</key>
-	<integer>106</integer>
+	<integer>127</integer>
 	<key>counter_clockwise_x</key>
-	<integer>391</integer>
+	<integer>409</integer>
 	<key>counter_clockwise_y</key>
-	<integer>197</integer>
+	<integer>218</integer>
 	<key>test</key>
 	<string>hello</string>
 </dict>

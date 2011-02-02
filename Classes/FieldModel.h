@@ -12,12 +12,12 @@
 #define HEIGHT 20
 
 @class FieldView;
-//@class NextView;
+@class NextView;
 @class Block;
 
 @interface FieldModel : NSObject {
 	FieldView *fieldView;
-//	NextView *nextView;
+	NextView *nextView;
 	NSTimer *timer;
 	Block *now;
 	Block *next;
@@ -28,7 +28,7 @@
 }
 
 @property (nonatomic, retain) FieldView *fieldView;
-//@property (nonatomic, retain) NextView *nextView;
+@property (nonatomic, retain) NextView *nextView;
 @property (nonatomic, retain) NSTimer *timer;
 @property (nonatomic, assign) BOOL isDead;
 
@@ -39,23 +39,17 @@
 
 - (void)pause;
 
-- (void)upClick;
-- (void)downClick;
-- (void)leftClick;
-- (void)rightClick;
-- (void)rotate1Click;
-- (void)rotate2Click;
+- (void)up;
+- (void)down;
+- (void)left;
+- (void)right;
+- (void)clockwise;
+- (void)counter_clockwise;
 
-- (void)upTimer;
-- (void)downTimer;
-- (void)leftTimer;
-- (void)rightTimer;
-- (void)rotate1Timer;
-- (void)rotate2Timer;
+- (void)downLongPress;
+- (void)leftLongPress;
+- (void)rightLongPress;
 
-- (BOOL)drop;
-- (BOOL)left;
-- (BOOL)right;
 - (void)dropTillEnd;
 - (void)leftTillEnd;
 - (void)rightTillEnd;

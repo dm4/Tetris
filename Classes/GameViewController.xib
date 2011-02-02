@@ -180,7 +180,7 @@
 					<object class="IBUIButton" id="1063645293">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{369, 81}, {80, 80}}</string>
+						<string key="NSFrame">{{369, 87}, {80, 80}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<float key="IBUIAlpha">0.5</float>
@@ -204,7 +204,7 @@
 					<object class="IBUIButton" id="121148497">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{367, 172}, {84, 80}}</string>
+						<string key="NSFrame">{{367, 178}, {84, 80}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<float key="IBUIAlpha">0.5</float>
@@ -233,9 +233,21 @@
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MQA</bytes>
-							<object class="NSColorSpace" key="NSCustomColorSpace">
+							<object class="NSColorSpace" key="NSCustomColorSpace" id="989596266">
 								<int key="NSID">2</int>
 							</object>
+						</object>
+						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+					</object>
+					<object class="IBUIView" id="315748321">
+						<reference key="NSNextResponder" ref="191373211"/>
+						<int key="NSvFlags">274</int>
+						<string key="NSFrame">{{375, 20}, {68, 48}}</string>
+						<reference key="NSSuperview" ref="191373211"/>
+						<object class="NSColor" key="IBUIBackgroundColor">
+							<int key="NSColorSpace">3</int>
+							<bytes key="NSWhite">MQA</bytes>
+							<reference key="NSCustomColorSpace" ref="989596266"/>
 						</object>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
@@ -321,42 +333,6 @@
 					<int key="connectionID">20</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchEventConnection" key="connection">
-						<string key="label">pressDown</string>
-						<reference key="source" ref="326194831"/>
-						<reference key="destination" ref="372490531"/>
-						<int key="IBEventType">7</int>
-					</object>
-					<int key="connectionID">22</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchEventConnection" key="connection">
-						<string key="label">pressLeft</string>
-						<reference key="source" ref="196085395"/>
-						<reference key="destination" ref="372490531"/>
-						<int key="IBEventType">7</int>
-					</object>
-					<int key="connectionID">23</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchEventConnection" key="connection">
-						<string key="label">pressClockwise</string>
-						<reference key="source" ref="1063645293"/>
-						<reference key="destination" ref="372490531"/>
-						<int key="IBEventType">7</int>
-					</object>
-					<int key="connectionID">25</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchEventConnection" key="connection">
-						<string key="label">pressCounterClockwise</string>
-						<reference key="source" ref="121148497"/>
-						<reference key="destination" ref="372490531"/>
-						<int key="IBEventType">7</int>
-					</object>
-					<int key="connectionID">26</int>
-				</object>
-				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">fieldView</string>
 						<reference key="source" ref="372490531"/>
@@ -369,27 +345,62 @@
 						<string key="label">pressRight</string>
 						<reference key="source" ref="579258666"/>
 						<reference key="destination" ref="372490531"/>
-						<int key="IBEventType">7</int>
+						<int key="IBEventType">1</int>
 					</object>
-					<int key="connectionID">30</int>
+					<int key="connectionID">34</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">pressUp</string>
 						<reference key="source" ref="25232956"/>
 						<reference key="destination" ref="372490531"/>
-						<int key="IBEventType">7</int>
+						<int key="IBEventType">1</int>
 					</object>
-					<int key="connectionID">31</int>
+					<int key="connectionID">41</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
-						<string key="label">test</string>
-						<reference key="source" ref="579258666"/>
+						<string key="label">pressLeft</string>
+						<reference key="source" ref="196085395"/>
 						<reference key="destination" ref="372490531"/>
-						<int key="IBEventType">7</int>
+						<int key="IBEventType">1</int>
 					</object>
-					<int key="connectionID">33</int>
+					<int key="connectionID">42</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">pressDown</string>
+						<reference key="source" ref="326194831"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">1</int>
+					</object>
+					<int key="connectionID">43</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">pressClockwise</string>
+						<reference key="source" ref="1063645293"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">1</int>
+					</object>
+					<int key="connectionID">44</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">pressCounterClockwise</string>
+						<reference key="source" ref="121148497"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">1</int>
+					</object>
+					<int key="connectionID">45</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">nextView</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="315748321"/>
+					</object>
+					<int key="connectionID">47</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -411,10 +422,11 @@
 							<reference ref="196085395"/>
 							<reference ref="25232956"/>
 							<reference ref="716289519"/>
-							<reference ref="1063645293"/>
-							<reference ref="121148497"/>
 							<reference ref="145192722"/>
 							<reference ref="159075331"/>
+							<reference ref="315748321"/>
+							<reference ref="1063645293"/>
+							<reference ref="121148497"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -472,6 +484,14 @@
 					<object class="IBObjectRecord">
 						<int key="objectID">27</int>
 						<reference key="object" ref="145192722"/>
+						<object class="NSMutableArray" key="children">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+						</object>
+						<reference key="parent" ref="191373211"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">46</int>
+						<reference key="object" ref="315748321"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 				</object>
@@ -499,6 +519,9 @@
 					<string>27.CustomClassName</string>
 					<string>27.IBPluginDependency</string>
 					<string>27.IBViewBoundsToFrameTransform</string>
+					<string>46.CustomClassName</string>
+					<string>46.IBPluginDependency</string>
+					<string>46.IBViewBoundsToFrameTransform</string>
 					<string>5.IBPluginDependency</string>
 					<string>5.IBViewBoundsToFrameTransform</string>
 					<string>6.IBPluginDependency</string>
@@ -529,17 +552,22 @@
 					<string>ArrowButton</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAABDuIAAwwgAAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAABDuIAAwx8AAA</bytes>
 					</object>
 					<string>ArrowButton</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAABDt4AAw2MAAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAABDt4AAw3oAAA</bytes>
 					</object>
 					<string>FieldView</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
 						<bytes key="NSTransformStruct">AUMvAAAAAAAAA</bytes>
+					</object>
+					<string>NextView</string>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<object class="NSAffineTransform">
+						<bytes key="NSTransformStruct">P4AAAL+AAABDu4AAwoQAAA</bytes>
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
@@ -577,7 +605,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">33</int>
+			<int key="maxID">47</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -684,6 +712,7 @@
 							<string>down</string>
 							<string>fieldView</string>
 							<string>left</string>
+							<string>nextView</string>
 							<string>right</string>
 							<string>up</string>
 						</object>
@@ -694,6 +723,7 @@
 							<string>ArrowButton</string>
 							<string>FieldView</string>
 							<string>ArrowButton</string>
+							<string>NextView</string>
 							<string>ArrowButton</string>
 							<string>ArrowButton</string>
 						</object>
@@ -707,6 +737,7 @@
 							<string>down</string>
 							<string>fieldView</string>
 							<string>left</string>
+							<string>nextView</string>
 							<string>right</string>
 							<string>up</string>
 						</object>
@@ -733,6 +764,10 @@
 								<string key="candidateClassName">ArrowButton</string>
 							</object>
 							<object class="IBToOneOutletInfo">
+								<string key="name">nextView</string>
+								<string key="candidateClassName">NextView</string>
+							</object>
+							<object class="IBToOneOutletInfo">
 								<string key="name">right</string>
 								<string key="candidateClassName">ArrowButton</string>
 							</object>
@@ -745,6 +780,14 @@
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">Classes/GameViewController.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">NextView</string>
+					<string key="superclassName">UIView</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">Classes/NextView.h</string>
 					</object>
 				</object>
 			</object>

@@ -15,3 +15,7 @@
 #define RIGHT_BUTTON_TAG                13
 #define CLOCKWISE_BUTTON_TAG            14
 #define COUNTER_CLOCKWISE_BUTTON_TAG    15
+
+typedef enum {
+    CYAN
+} BlockType;

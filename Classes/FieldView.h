@@ -10,6 +10,11 @@
 
 @class FieldModel;
 
+@protocol FieldViewDataSource
+- (int)getX:(int)x Y:(int)y;
+@end
+
+
 @interface FieldView : UIView {
     FieldModel *model;
 }

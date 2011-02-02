@@ -11,8 +11,9 @@
 @class ArrowButton;
 @class FieldView;
 @class FieldModel;
+@class NextView;
 
-@interface GameViewController : UIViewController {
+@interface GameViewController : UIViewController<UIGestureRecognizerDelegate> {
     IBOutlet ArrowButton *up;
     IBOutlet ArrowButton *down;
     IBOutlet ArrowButton *left;
@@ -20,12 +21,17 @@
     IBOutlet ArrowButton *clockwise;
     IBOutlet ArrowButton *counter_clockwise;  
     IBOutlet FieldView *fieldView;
+    IBOutlet NextView *nextView;
     FieldModel *model;
 }
 
 @property (nonatomic, retain) FieldModel *model;
 
 - (void)updateButtonPosition;
+- (void)handleDoubleTapFrom:(UITapGestureRecognizer *)recognizer;
+- (void)handleDownLongPress;
+- (void)handleLeftLongPress;
+- (void)handleRightLongPress;
 - (IBAction)back;
 - (IBAction)pressUp;
 - (IBAction)pressDown;

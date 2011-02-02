@@ -10,6 +10,7 @@
 #import "ArrowButton.h"
 #import "FieldModel.h"
 #import "FieldView.h"
+#import "NextView.h"
 
 @implementation GameViewController
 
@@ -25,15 +26,40 @@
     //bind view & model
     FieldModel *newModel = [[FieldModel alloc] init];
 	newModel.fieldView = fieldView;
+    newModel.nextView = nextView;
 	fieldView.model = newModel;
+    nextView.model = newModel;
+    [newModel addObserver:self forKeyPath:@"isDead" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:NULL];
     self.model = newModel;
     [newModel release];
-    [self.view bringSubviewToFront:right];
     
-    //
-    NSLog(@"%@", up);
-    [up addTarget:self action:@selector(pressUp) forControlEvents:UIControlEventTouchUpInside];
-    [right addTarget:self action:@selector(pressRight) forControlEvents:UIControlEventTouchUpInside];
+    // add long press gesture
+    UILongPressGestureRecognizer *downLongPressGR;
+    downLongPressGR = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleDownLongPress)];
+    downLongPressGR.cancelsTouchesInView = NO;
+    downLongPressGR.minimumPressDuration = [[NSUserDefaults standardUserDefaults] floatForKey:@"repeat"];
+    [down addGestureRecognizer:downLongPressGR];
+    [downLongPressGR release];
+    UILongPressGestureRecognizer *leftLongPressGR;
+    leftLongPressGR = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLeftLongPress)];
+    leftLongPressGR.cancelsTouchesInView = NO;
+    leftLongPressGR.minimumPressDuration = [[NSUserDefaults standardUserDefaults] floatForKey:@"repeat"];
+    [left addGestureRecognizer:leftLongPressGR];
+    [leftLongPressGR release];
+    UILongPressGestureRecognizer *rightLongPressGR;
+    rightLongPressGR = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleRightLongPress)];
+    rightLongPressGR.cancelsTouchesInView = NO;
+    rightLongPressGR.minimumPressDuration = [[NSUserDefaults standardUserDefaults] floatForKey:@"repeat"];
+    [right addGestureRecognizer:rightLongPressGR];
+    [rightLongPressGR release];
+    
+    // add double tap gesture
+    UITapGestureRecognizer *doubleTapGR;
+    doubleTapGR = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleDoubleTapFrom:)];
+    doubleTapGR.numberOfTapsRequired = 2;
+    doubleTapGR.delegate = self;
+    [self.view addGestureRecognizer:doubleTapGR];
+    [doubleTapGR release];
 }
 
 - (void)viewDidUnload {
@@ -72,6 +98,36 @@
 }
 
 #pragma mark -
+#pragma mark UIGestureRecognizer Handler
+
+- (void)handleDoubleTapFrom:(UITapGestureRecognizer *)recognizer {
+    NSLog(@"double");
+    [model pause];
+}
+
+- (void)handleDownLongPress {
+    [model downLongPress];
+}
+
+- (void)handleLeftLongPress {
+    [model leftLongPress];
+}
+
+- (void)handleRightLongPress {
+    [model rightLongPress];
+}
+
+#pragma mark -
+#pragma mark UIGestureRecognizerDelegate
+
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
+    if ([gestureRecognizer isKindOfClass:[UITapGestureRecognizer class]] && [touch.view isKindOfClass:[ArrowButton class]]) {
+        return NO;
+    }
+    return YES;
+}
+
+#pragma mark -
 #pragma mark Orientation
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -87,35 +143,39 @@
 }
 
 - (IBAction)pressUp {
-    NSLog(@"up");
-    [model upClick];
+    [model up];
 }
 
 - (IBAction)pressDown {
-    NSLog(@"down");
-    [model downClick];
+    [model down];
 }
 
 - (IBAction)pressLeft {
-    NSLog(@"left");
-    [model leftClick];
+    [model left];
 }
 
 - (IBAction)pressRight {
-    NSLog(@"right");
-    [model rightClick];
+    [model right];
 }
 
 - (IBAction)pressClockwise {
-    NSLog(@"clockwise");
-    [model rotate1Click];
+    [model clockwise];
 }
 
 - (IBAction)pressCounterClockwise {
+    [model counter_clockwise];
 }
 
 - (IBAction)test {
     NSLog(@"test");
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
+    NSLog(@"obs %@, %@", keyPath, change);
+    if ([keyPath isEqualToString:@"isDead"]) {
+        return;
+    }
+    [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
 }
 
 @end

@@ -21,6 +21,10 @@
     return self;
 }
 
+- (void)dealloc {
+    [super dealloc];
+}
+
 - (void)drawRect:(CGRect)rect {
     CGContextRef context = UIGraphicsGetCurrentContext();
     BlockDrawer *drawer = [[BlockDrawer alloc] initWithContext:context];
@@ -30,11 +34,7 @@
             [drawer drawType:type atX:i andY:19-j];
         }
     }
-    [drawer release];}
-
-- (void)dealloc {
-    [super dealloc];
+    [drawer release];
 }
-
 
 @end

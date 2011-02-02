@@ -15,6 +15,7 @@
 		FA99C83C12F1A148008F2655 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA99C83A12F1A148008F2655 /* GameViewController.m */; };
 		FA99C83D12F1A148008F2655 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA99C83B12F1A148008F2655 /* GameViewController.xib */; };
 		FAA1843D12F70B48000EB7E5 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA1843C12F70B48000EB7E5 /* MainWindow.xib */; };
+		FAA185BF12F95D21000EB7E5 /* NextView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA185BE12F95D21000EB7E5 /* NextView.m */; };
 		FAAEE54512F2AF620035EC6B /* OptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAEE54312F2AF620035EC6B /* OptionViewController.m */; };
 		FAAEE54612F2AF620035EC6B /* OptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAAEE54412F2AF620035EC6B /* OptionViewController.xib */; };
 		FAAEE65112F3E8F70035EC6B /* DefaultSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAAEE65012F3E8F60035EC6B /* DefaultSettings.plist */; };
@@ -47,6 +48,8 @@
 		FA99C83A12F1A148008F2655 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		FA99C83B12F1A148008F2655 /* GameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GameViewController.xib; path = Classes/GameViewController.xib; sourceTree = "<group>"; };
 		FAA1843C12F70B48000EB7E5 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainWindow.xib; path = Resources/MainWindow.xib; sourceTree = "<group>"; };
+		FAA185BD12F95D21000EB7E5 /* NextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextView.h; sourceTree = "<group>"; };
+		FAA185BE12F95D21000EB7E5 /* NextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextView.m; sourceTree = "<group>"; };
 		FAAEE54212F2AF620035EC6B /* OptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionViewController.h; sourceTree = "<group>"; };
 		FAAEE54312F2AF620035EC6B /* OptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionViewController.m; sourceTree = "<group>"; };
 		FAAEE54412F2AF620035EC6B /* OptionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = OptionViewController.xib; path = Classes/OptionViewController.xib; sourceTree = "<group>"; };
@@ -99,6 +102,8 @@
 				FA99C83A12F1A148008F2655 /* GameViewController.m */,
 				FAE0154212F45D62007EB05C /* FieldView.h */,
 				FAE0154312F45D62007EB05C /* FieldView.m */,
+				FAA185BD12F95D21000EB7E5 /* NextView.h */,
+				FAA185BE12F95D21000EB7E5 /* NextView.m */,
 				FAE0158012F4887B007EB05C /* FieldModel.h */,
 				FAE0158112F4887B007EB05C /* FieldModel.m */,
 				FAAEE54212F2AF620035EC6B /* OptionViewController.h */,
@@ -264,6 +269,7 @@
 				FAE0158212F4887B007EB05C /* FieldModel.m in Sources */,
 				FAE015B412F48B3F007EB05C /* Block.m in Sources */,
 				FAE015B512F48B3F007EB05C /* BlockDrawer.m in Sources */,
+				FAA185BF12F95D21000EB7E5 /* NextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -24,6 +24,7 @@
 @synthesize nextView;
 @synthesize timer;
 @synthesize isDead;
+@synthesize isPause;
 
 - (id)init {
 	if (self = [super init]) {
@@ -297,7 +298,7 @@
 
 - (void)newGame {
     NSLog(@"New Game");
-    self.isDead = NO;
+    isDead = NO;
     for (int i=0; i<WIDTH; i++) {
         for (int j=0; j<HEIGHT; j++) {
             field[i][j] = 0;

@@ -9,13 +9,18 @@
 
 #define BUTTON_STROKE 8.0
 
-#define UP_BUTTON_TAG                   10
-#define DOWN_BUTTON_TAG                 11
-#define LEFT_BUTTON_TAG                 12
-#define RIGHT_BUTTON_TAG                13
-#define CLOCKWISE_BUTTON_TAG            14
-#define COUNTER_CLOCKWISE_BUTTON_TAG    15
+#define PAUSEVIEW_POSITION_IN   CGPointMake(255, 160);
+#define PAUSEVIEW_POSITION_OUT  CGPointMake(255, -400);
 
 typedef enum {
-    CYAN
+    CYAN,
+    RED,
+    ORANGE,
+    BLUE,
+    GREEN,
+    PURPLE,
+    YELLOW,
+    GRAY,
+    GHOST
 } BlockType;
+

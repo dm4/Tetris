@@ -275,8 +275,6 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>7</integer>
-									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -318,7 +316,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>GameViewController.m</string>
+								<string>FieldModel.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -326,45 +324,46 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>GameViewController.m</string>
+										<string>FieldModel.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>FAA1864A12F9B2E1000EB7E5</string>
+										<string>FAAFDE2012FAF6CB00F76872</string>
 										<key>history</key>
 										<array>
 											<string>FA99C86B12F1AA2A008F2655</string>
 											<string>FA99C86C12F1AA2A008F2655</string>
 											<string>FAAEE79212F4399B0035EC6B</string>
-											<string>FAE0155912F483F0007EB05C</string>
 											<string>FAE0155A12F483F0007EB05C</string>
 											<string>FAE0158312F488CD007EB05C</string>
 											<string>FAE0158412F488CD007EB05C</string>
 											<string>FAE0158512F488CD007EB05C</string>
-											<string>FAE015A512F4898C007EB05C</string>
 											<string>FAE015A812F4898C007EB05C</string>
-											<string>FAE015AA12F4898C007EB05C</string>
-											<string>FAA1845512F7376F000EB7E5</string>
 											<string>FAA184CB12F7A06E000EB7E5</string>
-											<string>FAA1857E12F95A1E000EB7E5</string>
 											<string>FAA185DF12F96088000EB7E5</string>
 											<string>FAA185E012F96088000EB7E5</string>
 											<string>FAA1861312F9706C000EB7E5</string>
-											<string>FAA1861412F9706C000EB7E5</string>
-											<string>FAA1861912F9706C000EB7E5</string>
-											<string>FAA1861A12F9706C000EB7E5</string>
 											<string>FAA1861B12F9706C000EB7E5</string>
 											<string>FAA1862712F9A328000EB7E5</string>
-											<string>FAA1862812F9A328000EB7E5</string>
-											<string>FAA1862A12F9A328000EB7E5</string>
-											<string>FAA1862C12F9A328000EB7E5</string>
-											<string>FAA1862D12F9A328000EB7E5</string>
-											<string>FAA1863D12F9A721000EB7E5</string>
 											<string>FAA1863E12F9A721000EB7E5</string>
-											<string>FAA1864612F9B2E1000EB7E5</string>
-											<string>FAA1864712F9B2E1000EB7E5</string>
-											<string>FAA1864812F9B2E1000EB7E5</string>
-											<string>FAA1864912F9B2E1000EB7E5</string>
+											<string>FAA186A212FA7A71000EB7E5</string>
+											<string>FAAFDD3F12FADCB200F76872</string>
+											<string>FAAFDD6112FAE3BA00F76872</string>
+											<string>FAAFDD6212FAE3BA00F76872</string>
+											<string>FAAFDD6312FAE3BA00F76872</string>
+											<string>FAAFDD6512FAE3BA00F76872</string>
+											<string>FAAFDD6712FAE3BA00F76872</string>
+											<string>FAAFDD6812FAE3BA00F76872</string>
+											<string>FAAFDDAA12FAEB1800F76872</string>
+											<string>FAAFDDAB12FAEB1800F76872</string>
+											<string>FAAFDDAC12FAEB1800F76872</string>
+											<string>FAAFDDC812FAEC0900F76872</string>
+											<string>FAAFDDC912FAEC0900F76872</string>
+											<string>FAAFDE0612FAF3D800F76872</string>
+											<string>FAAFDE0712FAF3D800F76872</string>
+											<string>FAAFDE1012FAF60600F76872</string>
+											<string>FAAFDE1712FAF67200F76872</string>
+											<string>FAAFDE1112FAF60600F76872</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -422,9 +421,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>FAA1862012F9706C000EB7E5</string>
+				<string>FAAFDD4112FADCB200F76872</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>FAA1862112F9706C000EB7E5</string>
+				<string>FAAFDD4212FADCB200F76872</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -562,10 +561,9 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>FAA1864B12F9B2E1000EB7E5</string>
 		<string>1C530D57069F1CE1000CFCEE</string>
-		<string>FAA1862212F9706C000EB7E5</string>
-		<string>FAA1862312F9706C000EB7E5</string>
+		<string>FAAFDD7412FAE3BA00F76872</string>
+		<string>FAAFDD7512FAE3BA00F76872</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>FA96764312F18CD2005BA273</string>
 		<string>1C78EAAD065D492600B07095</string>
@@ -651,7 +649,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>FA96764312F18CD2005BA273</string>
-				<string>FAA1860412F97054000EB7E5</string>
+				<string>FAAFDD4312FADCB200F76872</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -773,13 +771,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>FAA1860512F97054000EB7E5</string>
+				<string>FAAFDD6C12FAE3BA00F76872</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>FAA1860612F97054000EB7E5</string>
-				<string>FAA1860712F97054000EB7E5</string>
-				<string>FAA1860812F97054000EB7E5</string>
-				<string>FAA1860912F97054000EB7E5</string>
-				<string>FAA1860A12F97054000EB7E5</string>
+				<string>FAAFDD6D12FAE3BA00F76872</string>
+				<string>FAAFDD6E12FAE3BA00F76872</string>
+				<string>FAAFDD6F12FAE3BA00F76872</string>
+				<string>FAAFDD7012FAE3BA00F76872</string>
+				<string>FAAFDD7112FAE3BA00F76872</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -811,7 +809,7 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CDD528C0622207200134675</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>FieldModel.m</string>
+										<string>GameControlViewController.m</string>
 										<key>StatusBarVisibility</key>
 										<true/>
 									</dict>
@@ -869,8 +867,8 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C530D57069F1CE1000CFCEE</string>
-				<string>FAA1860D12F97054000EB7E5</string>
-				<string>FAA1860E12F97054000EB7E5</string>
+				<string>FAAFDDE812FAF24000F76872</string>
+				<string>FAAFDDE912FAF24000F76872</string>
 				<string>1CDD528C0622207200134675</string>
 				<string>1CD0528E0623707200166675</string>
 			</array>
@@ -935,7 +933,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>FAA1860F12F97054000EB7E5</string>
+				<string>FAAFDD7212FAE3BA00F76872</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>

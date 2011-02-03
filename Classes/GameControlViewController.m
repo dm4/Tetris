@@ -8,7 +8,13 @@
 
 #import "GameControlViewController.h"
 #import "ArrowButton.h"
-#import "Constants.h"
+
+#define UP_BUTTON_TAG                   10
+#define DOWN_BUTTON_TAG                 11
+#define LEFT_BUTTON_TAG                 12
+#define RIGHT_BUTTON_TAG                13
+#define CLOCKWISE_BUTTON_TAG            14
+#define COUNTER_CLOCKWISE_BUTTON_TAG    15
 
 @implementation GameControlViewController
 

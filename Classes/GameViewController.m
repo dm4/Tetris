@@ -11,6 +11,7 @@
 #import "FieldModel.h"
 #import "FieldView.h"
 #import "NextView.h"
+#import "Constants.h"
 
 @implementation GameViewController
 
@@ -22,6 +23,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self updateButtonPosition];
+    
+    // 
+    pauseView.alpha = 0.0;
+    pauseView.center = PAUSEVIEW_POSITION_OUT;
     
     //bind view & model
     FieldModel *newModel = [[FieldModel alloc] init];
@@ -101,8 +106,14 @@
 #pragma mark UIGestureRecognizer Handler
 
 - (void)handleDoubleTapFrom:(UITapGestureRecognizer *)recognizer {
-    NSLog(@"double");
-    [model pause];
+    if (!model.isPause) {
+        [model pause];
+        [UIView transitionWithView:pauseView
+                          duration:0.5
+                           options:UIViewAnimationTransitionFlipFromLeft
+                        animations:^{ pauseView.alpha = 1.0; pauseView.center = PAUSEVIEW_POSITION_IN; }
+                        completion:nil];
+    }
 }
 
 - (void)handleDownLongPress {
@@ -164,6 +175,17 @@
 
 - (IBAction)pressCounterClockwise {
     [model counter_clockwise];
+}
+
+- (IBAction)pressResume {
+    if (model.isPause) {
+        [model pause];
+        [UIView transitionWithView:pauseView
+                          duration:0.5
+                           options:UIViewAnimationTransitionFlipFromLeft
+                        animations:^{ pauseView.alpha = 0.0; pauseView.center = PAUSEVIEW_POSITION_OUT; }
+                        completion:nil];
+    }
 }
 
 - (IBAction)test {

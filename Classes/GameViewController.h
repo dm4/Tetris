@@ -22,6 +22,7 @@
     IBOutlet ArrowButton *counter_clockwise;  
     IBOutlet FieldView *fieldView;
     IBOutlet NextView *nextView;
+    IBOutlet UIView *pauseView;
     FieldModel *model;
 }
 
@@ -39,6 +40,7 @@
 - (IBAction)pressRight;
 - (IBAction)pressClockwise;
 - (IBAction)pressCounterClockwise;
+- (IBAction)pressResume;
 - (IBAction)test;
 
 @end

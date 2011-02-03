@@ -31,6 +31,7 @@
 @property (nonatomic, retain) NextView *nextView;
 @property (nonatomic, retain) NSTimer *timer;
 @property (nonatomic, assign) BOOL isDead;
+@property (nonatomic, readonly) BOOL isPause;
 
 - (Block *)getNext;
 - (int)getX:(int)x Y:(int)y;

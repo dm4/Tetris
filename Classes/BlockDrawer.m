@@ -7,19 +7,12 @@
 //
 
 #import "BlockDrawer.h"
+#import "Constants.h"
 
 #define EDGE		1.2
 #define INNER_EDGE	2.0
 
-#define CYAN	0
-#define RED		1
-#define ORANGE	2
-#define BLUE	3
-#define GREEN	4
-#define PURPLE	5
-#define YELLOW	6
-#define GRAY	7
-#define GHOST	8
+
 
 #define LIGHT	0
 #define DARK	1

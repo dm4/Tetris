@@ -9,9 +9,6 @@
 
 #define BUTTON_STROKE 8.0
 
-#define PAUSEVIEW_POSITION_IN   CGPointMake(255, 160);
-#define PAUSEVIEW_POSITION_OUT  CGPointMake(255, -400);
-
 typedef enum {
     CYAN,
     RED,

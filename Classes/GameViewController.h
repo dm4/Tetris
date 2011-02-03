@@ -33,6 +33,7 @@
 - (void)handleDownLongPress;
 - (void)handleLeftLongPress;
 - (void)handleRightLongPress;
+- (void)pauseModel;
 - (IBAction)back;
 - (IBAction)pressUp;
 - (IBAction)pressDown;

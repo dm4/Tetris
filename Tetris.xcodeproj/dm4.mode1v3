@@ -316,7 +316,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>FieldModel.m</string>
+								<string>GameMainWindow.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -324,11 +324,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>FieldModel.m</string>
+										<string>GameMainWindow.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>FAAFDE2012FAF6CB00F76872</string>
+										<string>FAAFDE2412FB026D00F76872</string>
 										<key>history</key>
 										<array>
 											<string>FA99C86B12F1AA2A008F2655</string>
@@ -363,7 +363,8 @@
 											<string>FAAFDE0712FAF3D800F76872</string>
 											<string>FAAFDE1012FAF60600F76872</string>
 											<string>FAAFDE1712FAF67200F76872</string>
-											<string>FAAFDE1112FAF60600F76872</string>
+											<string>FAAFDE2112FB026D00F76872</string>
+											<string>FAAFDE2212FB026D00F76872</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>

@@ -11,7 +11,6 @@
 #import "FieldModel.h"
 #import "FieldView.h"
 #import "NextView.h"
-#import "Constants.h"
 
 @implementation GameViewController
 
@@ -26,7 +25,6 @@
     
     // 
     pauseView.alpha = 0.0;
-    pauseView.center = PAUSEVIEW_POSITION_OUT;
     
     //bind view & model
     FieldModel *newModel = [[FieldModel alloc] init];
@@ -102,18 +100,29 @@
     counter_clockwise.center = CGPointMake(x, y);
 }
 
+- (void)pauseModel {
+    [model pause];
+    if (model.isPause) {
+        [UIView transitionWithView:pauseView
+                          duration:0.5
+                           options:UIViewAnimationOptionTransitionFlipFromLeft
+                        animations:^{ pauseView.alpha = 1.0; }
+                        completion:nil];
+    }
+    else if (!model.isPause) {
+        [UIView transitionWithView:pauseView
+                          duration:0.5
+                           options:UIViewAnimationOptionTransitionFlipFromRight
+                        animations:^{ pauseView.alpha = 0.0; }
+                        completion:nil];
+    }
+}
+
 #pragma mark -
 #pragma mark UIGestureRecognizer Handler
 
 - (void)handleDoubleTapFrom:(UITapGestureRecognizer *)recognizer {
-    if (!model.isPause) {
-        [model pause];
-        [UIView transitionWithView:pauseView
-                          duration:0.5
-                           options:UIViewAnimationTransitionFlipFromLeft
-                        animations:^{ pauseView.alpha = 1.0; pauseView.center = PAUSEVIEW_POSITION_IN; }
-                        completion:nil];
-    }
+    [self pauseModel];
 }
 
 - (void)handleDownLongPress {
@@ -178,14 +187,7 @@
 }
 
 - (IBAction)pressResume {
-    if (model.isPause) {
-        [model pause];
-        [UIView transitionWithView:pauseView
-                          duration:0.5
-                           options:UIViewAnimationTransitionFlipFromLeft
-                        animations:^{ pauseView.alpha = 0.0; pauseView.center = PAUSEVIEW_POSITION_OUT; }
-                        completion:nil];
-    }
+    [self pauseModel];
 }
 
 - (IBAction)test {
